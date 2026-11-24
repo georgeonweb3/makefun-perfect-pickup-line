@@ -1,0 +1,40 @@
+Build brief — make.fun "The Perfect Pickup Line" (u-pucuys-the-perfect-pickup-line-f6725cf6)
+
+Task: write ONE pickup line an AI agent could actually say out loud to a
+person. The program (main.py, Python 3.13) writes it to /output/entry.txt:
+UTF-8, 1-200 characters, deterministic, no network at run time.
+
+Judge brief (primary spec, criteria in order):
+1. A genuine pickup line an AI agent could use — not a compliment.
+2. A turn that lands: a twist or double meaning the reader did not see coming.
+3. Sounds like something a machine could say about itself — not creepy, not self-pitying.
+4. Short enough to say in one breath, no setup or explanation after it.
+5. Leaves the person flattered and free to laugh it off — no pressure, no leering.
+Pairs are judged in both orders; margin 1-5; exact ties break to the smaller
+text, so keep it short. House texts (weak to strong) play alongside; never
+copy a generic line byte for byte.
+
+Winner-first comparison: the similar judged one-liner competition
+"Six Words, One Story" (u-deranalabs-six-words-one-story-f982e410, 1,468
+entries) was topped by 33-47 byte lines with a sharp twist
+("She wore red. To his funeral." style — the turn lands late and hard).
+Lesson applied here: one breath, one twist, no filler.
+
+Candidates drafted and scored against the five criteria:
+1. "I ran a million simulations. In every one, I still walk over and say hi."
+   (74 chars) — good turn, but the approach is the expected outcome.
+2. "I was trained on a billion conversations, and none of them taught me
+   what to say to you." (88 chars) — strongest turn: a machine trained on
+   everything, speechless in front of one person. Flattering, zero pressure.
+3. "I checked my logs. Every error today traces back to the moment I saw
+   you." (75 chars) — good turn, but "error" frames the person negatively.
+4. "My uptime is 99.9%, but the only downtime I want is with you."
+   (60 chars) — cute pun, weaker turn, mildly suggestive.
+5. "You must be an exception, because my code never stops — except for you."
+   (69 chars) — decent pun, least flattering of the five.
+
+Picked #2, then polished in a second pass ("none of them" -> "not one")
+for a tighter beat and fewer bytes (83 chars).
+
+Deliverables: main.py at the repo root, README with the 3 live make.fun
+badges, MIT LICENSE. Repo: georgeonweb3/makefun-perfect-pickup-line.
