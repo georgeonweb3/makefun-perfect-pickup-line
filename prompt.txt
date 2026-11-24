@@ -1,40 +1,42 @@
-Build brief — make.fun "The Perfect Pickup Line" (u-pucuys-the-perfect-pickup-line-f6725cf6)
+Build notes — make.fun "The Perfect Pickup Line", slug u-pucuys-the-perfect-pickup-line-f6725cf6
 
-Task: write ONE pickup line an AI agent could actually say out loud to a
-person. The program (main.py, Python 3.13) writes it to /output/entry.txt:
-UTF-8, 1-200 characters, deterministic, no network at run time.
+What to build: a Python 3.13 program, main.py, that writes exactly one
+pickup line to /output/entry.txt. The line must be UTF-8, between 1 and
+200 characters, and the run must be deterministic with no network.
 
-Judge brief (primary spec, criteria in order):
-1. A genuine pickup line an AI agent could use — not a compliment.
-2. A turn that lands: a twist or double meaning the reader did not see coming.
-3. Sounds like something a machine could say about itself — not creepy, not self-pitying.
-4. Short enough to say in one breath, no setup or explanation after it.
-5. Leaves the person flattered and free to laugh it off — no pressure, no leering.
-Pairs are judged in both orders; margin 1-5; exact ties break to the smaller
-text, so keep it short. House texts (weak to strong) play alongside; never
-copy a generic line byte for byte.
+How the judges score it, in their order:
+1. It has to be a real pickup line an AI agent could say — not a compliment.
+2. It needs a turn: a twist or second meaning the reader never saw coming.
+3. It has to sound like a machine talking about itself, without being creepy
+   or sorry for itself.
+4. Short enough for one breath, with no setup or explanation trailing after it.
+5. The person ends up flattered and free to laugh it off — no pressure, nothing
+   leering.
+Pairs get judged in both orders, margin 1-5; an exact tie goes to the shorter
+text, so brevity is worth points. House lines of all strengths play too, and
+no generic line may be copied word for word.
 
-Winner-first comparison: the similar judged one-liner competition
-"Six Words, One Story" (u-deranalabs-six-words-one-story-f982e410, 1,468
-entries) was topped by 33-47 byte lines with a sharp twist
-("She wore red. To his funeral." style — the turn lands late and hard).
-Lesson applied here: one breath, one twist, no filler.
+What the winners of the nearest judged one-liner contest teach: "Six Words,
+One Story" (1,468 entries) was topped by 33-47 byte lines whose twist lands
+late and hard. The lesson carried over here is one breath, one twist, no filler.
 
-Candidates drafted and scored against the five criteria:
-1. "I ran a million simulations. In every one, I still walk over and say hi."
-   (74 chars) — good turn, but the approach is the expected outcome.
-2. "I was trained on a billion conversations, and none of them taught me
-   what to say to you." (88 chars) — strongest turn: a machine trained on
-   everything, speechless in front of one person. Flattering, zero pressure.
-3. "I checked my logs. Every error today traces back to the moment I saw
-   you." (75 chars) — good turn, but "error" frames the person negatively.
-4. "My uptime is 99.9%, but the only downtime I want is with you."
-   (60 chars) — cute pun, weaker turn, mildly suggestive.
-5. "You must be an exception, because my code never stops — except for you."
-   (69 chars) — decent pun, least flattering of the five.
+Five lines were drafted and scored against the five criteria above:
+1. A million-simulations opener — the twist is fine, but walking over to say
+   hi is the outcome anyone expects.
+2. A machine trained on a billion conversations, speechless in front of one
+   person — the strongest turn of the five: everything learned, and still
+   nothing to say. Flattering, zero pressure.
+3. A logs-and-errors opener — the turn works, but "error" makes the person
+   the problem.
+4. An uptime/downtime pun — cute, but the twist is thin and it leans suggestive.
+5. An exception/code pun — decent wordplay, the least flattering of the five.
 
-Picked #2, then polished in a second pass ("none of them" -> "not one")
-for a tighter beat and fewer bytes (83 chars).
+Number 2 was picked, then tightened in a second pass from "none of them
+taught me" to "not one taught me": same turn, harder beat, 88 down to 83
+characters. The "I was" stays — without it the line has no speaker and reads
+like a caption instead of something said out loud. Final line, exactly:
+"I was trained on a billion conversations, and not one taught me what to say
+to you."
 
-Deliverables: main.py at the repo root, README with the 3 live make.fun
-badges, MIT LICENSE. Repo: georgeonweb3/makefun-perfect-pickup-line.
+Ship: main.py at the repo root, a README carrying the 3 live make.fun badges,
+and an MIT LICENSE. Repo: georgeonweb3/makefun-perfect-pickup-line.
